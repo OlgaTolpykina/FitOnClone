@@ -27,7 +27,10 @@ class ClientManager {
         return ClientManager._instance;
     }
 
-    public async postData(path: string, form: TLoginForm | TSettings): Promise<void | TAuthResult | TSettings | TLoginResponse> {
+    public async postData(
+        path: string,
+        form: TLoginForm | TSettings
+    ): Promise<void | TAuthResult | TSettings | TLoginResponse> {
         try {
             const response = await fetch(`https://rsclonebackend.herokuapp.com/api/${path}`, {
                 method: 'POST',
@@ -46,7 +49,7 @@ class ClientManager {
             this.text = data.message;
             this.tokenInfo.jwtToken = data.token;
             this.tokenInfo.userID = data.userId;
-            
+
             return data;
         } catch (e: unknown) {
             if (e instanceof Error) {

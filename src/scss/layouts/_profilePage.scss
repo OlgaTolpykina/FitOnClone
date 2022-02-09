@@ -1,187 +1,186 @@
 .profile {
-  &-decorative {
-    width: 100%;
-    height: 100px;
-    background-color: $color-background-dark-blue;
-    &.narrow {
-      width: 100%;
-      height: 5px;
-      background: linear-gradient(270deg, $color-background-linear-3, $color-background-linear-4);
+    &-decorative {
+        width: 100%;
+        height: 100px;
+        background-color: $color-background-dark-blue;
+        &.narrow {
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(270deg, $color-background-linear-3, $color-background-linear-4);
+        }
     }
-  }
-  &-header {
-    width: 100%;
-    position: relative;
-    &_info {
-      width: 100%;
-      min-height: 200px;
+    &-header {
+        width: 100%;
+        position: relative;
+        &_info {
+            width: 100%;
+            min-height: 200px;
+        }
     }
-  }
-  &-avatar {
-    width: 150px;
-    height: 150px;
-    border: 1px solid $color-text-on-dark;
-    border-radius: 50%;
-    background-color: $color-primary;
-  }
-  &-name {
-    display: block;
-    width: 150px;
-    margin: 0 auto;
-    margin-bottom: 15px;
-    padding-top: 80px;
-    text-align: center;
-    font-size: 24px;
-  }
-  &-workout-info {
-    display: flex;
-    justify-content: space-between;
-    width: 650px;
-    height: 100px;
-    margin: 0 auto;
-  }
-  &-stats-block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    flex-basis: 50%;  
-  }
-  &-stats-icon {
-    display: flex;
-    flex-basis: 30%;
-    height: 100%;
-  }
-  &-stats-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 5px 0;
-    height: 100%;
-    color: $color-placeholder;
-    font-size: 22px;
-    p {
-      margin: 0;
-      width: 100%;
+    &-avatar {
+        width: 150px;
+        height: 150px;
+        border: 1px solid $color-text-on-dark;
+        border-radius: 50%;
+        background-color: $color-primary;
     }
-  }
-  &-content-block {
-    width: 800px;
-    min-height: 200px;
-    margin: 0 auto;
-    padding: 30px 0;
-    .title {
-      display: block;
-      margin: 0;
-      font-size: 20px;
+    &-name {
+        display: block;
+        width: 150px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        padding-top: 80px;
+        text-align: center;
+        font-size: 24px;
     }
-  }
-  &-content {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 15px;
-    width: 100%;
-    &.item {
-      margin-top: 20px;
+    &-workout-info {
+        display: flex;
+        justify-content: space-between;
+        width: 650px;
+        height: 100px;
+        margin: 0 auto;
     }
-  }
+    &-stats-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-basis: 50%;
+    }
+    &-stats-icon {
+        display: flex;
+        flex-basis: 30%;
+        height: 100%;
+    }
+    &-stats-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5px 0;
+        height: 100%;
+        color: $color-placeholder;
+        font-size: 22px;
+        p {
+            margin: 0;
+            width: 100%;
+        }
+    }
+    &-content-block {
+        width: 800px;
+        min-height: 200px;
+        margin: 0 auto;
+        padding: 30px 0;
+        .title {
+            display: block;
+            margin: 0;
+            font-size: 20px;
+        }
+    }
+    &-content {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 15px;
+        width: 100%;
+        &.item {
+            margin-top: 20px;
+        }
+    }
 }
 
 .achievement-card {
-  width: 100px;
-  height: 100px;
-  margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
 }
 
 .avatar {
-  position: absolute;
-  top: 25px;
-  left: 50%;
-  transform: translateX(-50%);
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .badge-img-modal {
-  display: block;
-  margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .modal.profile {
-  width: 55%;
-  min-height: 80%;
+    width: 55%;
 }
 
 .modal.profile {
-  .badge-title,
-  .badge-subtitle {
-    width: 90%;
-    text-align: center;
-    margin: 10px auto;
-  }
+    .badge-title,
+    .badge-subtitle {
+        width: 90%;
+        text-align: center;
+        margin: 10px auto;
+    }
 }
 
 @media (max-width: 850px) {
-  .profile {
-      &-content-block {
-        width: 600px;
-      }
-      &-content {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 100px);
+    .profile {
+        &-content-block {
+            width: 600px;
+        }
+        &-content {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 100px);
+        }
     }
-  }
 
-  .modal.profile {
-    width: 70%;
-  }
+    .modal.profile {
+        width: 70%;
+    }
 }
 
 @media (max-width: 650px) {
-  .profile {
-      &-content-block {
-        width: 400px;
-      }
-      &-workout-info {
-        width: 400px;
-        height: 80px;
-      }
-      &-stats-info {
-        font-size: 20px;
-      }
-  }
+    .profile {
+        &-content-block {
+            width: 400px;
+        }
+        &-workout-info {
+            width: 400px;
+            height: 80px;
+        }
+        &-stats-info {
+            font-size: 20px;
+        }
+    }
 
-  .badge-img-modal {
-    width: 200px;
-    height: 200px;
-  }
+    .badge-img-modal {
+        width: 200px;
+        height: 200px;
+    }
 
-  .modal.profile .badge-title {
-    font-size: 25px;
-  }
+    .modal.profile .badge-title {
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 450px) {
-  .profile {
-      &-content-block {
-        width: 300px;
-      }
-      &-content {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 100px);
-      }
-      &-workout-info {
-        width: 300px;
-      }
-      &-stats-info {
-        font-size: 18px;
-      }
-  }
-  .modal.profile {
-    width: 80%;
-  }
+    .profile {
+        &-content-block {
+            width: 300px;
+        }
+        &-content {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 100px);
+        }
+        &-workout-info {
+            width: 300px;
+        }
+        &-stats-info {
+            font-size: 18px;
+        }
+    }
+    .modal.profile {
+        width: 80%;
+    }
 
-  .modal.profile .badge-title {
-    font-size: 22px;
-  }
+    .modal.profile .badge-title {
+        font-size: 22px;
+    }
 }

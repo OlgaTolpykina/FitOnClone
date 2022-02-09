@@ -57,7 +57,7 @@ export type TLoginResponse = {
     userId: string;
     userName: string;
     email: string;
-}
+};
 
 export type TToken = {
     userID: string;

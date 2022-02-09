@@ -6,7 +6,7 @@ import MaterializeHandler from '../../services/materialize/materializeHandler';
 
 class ProfilePageView {
     private rootNode: HTMLElement;
-    
+
     private materializeHandler: MaterializeHandler;
 
     constructor() {
@@ -27,11 +27,8 @@ class ProfilePageView {
         ]);
         navbar.generateMenu();
         navbar.addProfileLink(user, true);
-        
-        this.rootNode.insertAdjacentHTML(
-            'beforeend',
-            this.template()
-        );
+
+        this.rootNode.insertAdjacentHTML('beforeend', this.template());
 
         this.rootNode.append(footer.getTemplate());
         this.materializeHandler.initModal();
@@ -101,7 +98,7 @@ class ProfilePageView {
                 </div>
             </div>
         </main>
-        `
+        `;
     }
 }
 
